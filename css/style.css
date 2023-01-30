@@ -33,6 +33,7 @@ html, body {
 body {
     /* background: color image repeat position/size */
     background: var(--bg-url) no-repeat top center/cover;
+    height: 100vh;
 }
 
 body * {
@@ -171,6 +172,7 @@ ul li a:hover {
     background: var(--highlight-color);
 }
 
+/* footer */
 footer {
     padding: 2.4rem 0;
     text-align: center;
