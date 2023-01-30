@@ -6,20 +6,41 @@
     box-sizing: border-box;
 }
 
+:root {
+    --text-color: #ffffff;
+    --bg-url: url(../assets/img/Interface=Mobile\,\ Theme=Dark\ mode.jpg);
+    --stroke-color: rgba(255, 255, 255, 0.5);
+    --surface-color: rgba(255, 255, 255, 0.1);
+    --surface-color-hover: rgba(255, 255, 255, 0.05);
+    --highlight-color: rgba(255, 255, 255, 0.2);
+    --switch-bg-url: url(../assets/img/moon.svg)
+}
+
+.light {
+    --text-color: #000000;
+    --bg-url: url(../assets/img/Interface=Mobile\,\ Theme=Light\ mode.jpg);
+    --stroke-color: rgba(0, 0, 0, 0.5);
+    --surface-color: rgba(0, 0, 0, 0.05);
+    --surface-color-hover: rgba(0, 0, 0, 0.02);
+    --highlight-color: rgba(0, 0, 0, 0.1);
+    --switch-bg-url: url(../assets/img/sun.svg)
+}
+
 html, body {
     font-size: 62.5%;
 }
 
 body {
     /* background: color image repeat position/size */
-    background: url(../assets/img/Interface=Mobile\,\ Theme=Dark\ mode.jpg) no-repeat top center/cover;
+    background: var(--bg-url) no-repeat top center/cover;
 }
 
 body * {
     font-family: 'Inter', sans-serif;
-    color: #ffffff;
+    color: var(--text-color);
 }
 
+/* profile */
 #container {
     width: 360px;
     margin: 5.5rem auto 0rem;
@@ -42,6 +63,44 @@ body * {
     margin-top: 0.8rem;
 }
 
+/* switch */
+#switch {
+    position: relative;
+    width: 6.4rem;
+
+    margin: 0.4rem auto;
+}
+
+#switch button {
+    width: 3.2rem;
+    height: 3.2rem;
+    background: #ffffff var(--switch-bg-url) no-repeat center;
+    border: 0;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+    transform: translateY(-50%);
+}
+
+.light #switch button {
+    right: 0;
+    left: initial;
+}
+
+#switch span {
+    display: block;
+    width: 6.4rem;
+    height: 2.4rem;
+    background: var(--surface-color);
+    border: 1px solid var(--stroke-color);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 9999px;
+}
+
 /* lista - links */
 ul {
     list-style: none;
@@ -61,8 +120,8 @@ ul li a{
 
     padding: 1.6rem 2.4rem;
 
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: var(--surface-color);
+    border: 1px solid var(--stroke-color);
     border-radius: 0.8rem;
     backdrop-filter: blur(0.4rem);
     -webkit-backdrop-filter: blur(0.4rem);
@@ -74,12 +133,12 @@ ul li a{
 }
 
 ul li a:hover {
-    background: rgba(255, 255, 255, 0.05);
-    border: 1.5px solid #ffffff;
+    background: var(--surface-color-hover);
+    border: 1.5px solid var(--text-color);
 }
 
-/* social */
-.social {
+/* email */
+.email {
     display: flex;
     gap: 1.6rem;
     align-items: center;
@@ -94,15 +153,21 @@ ul li a:hover {
     transition: background 0.5s;
 }
 
-.social a {
+.email a {
     display: flex;
 }
 
-.social p {
+.email p {
     font-size: 1.2rem;
 }
 
-.social:hover {
+.email:hover {
     cursor: default;
-    background: rgba(255, 255, 255, 0.2);
+    background: var(--highlight-color);
+}
+
+footer {
+    padding: 2.4rem 0;
+    text-align: center;
+    font-size: 1.2rem;
 }
