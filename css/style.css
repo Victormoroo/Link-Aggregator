@@ -94,7 +94,7 @@ body * {
 }
 
 #switch button:hover {
-    box-shadow: 0px 2px 8px var(--highlight-color);
+    outline: 8px solid var(--highlight-color);
 }
 
 #switch span {
