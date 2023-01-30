@@ -47,16 +47,16 @@ body * {
     padding: 0 2.4rem;
 }
 
-.profile {
+#profile {
     text-align: center;
     padding: 2.4rem;
 }
 
-.profile img {
+#profile img {
     width: 112px;
 }
 
-.profile p {
+#profile p {
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 2.4rem;
@@ -88,6 +88,10 @@ body * {
 .light #switch button {
     right: 0;
     left: initial;
+}
+
+#switch button:hover {
+    box-shadow: 0px 2px 8px var(--highlight-color);
 }
 
 #switch span {
