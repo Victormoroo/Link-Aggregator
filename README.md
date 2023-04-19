@@ -33,7 +33,7 @@ This project was developed with the following technologies:
 
 LinkAggregator is a web site created to combine links and use as an online business card.
 
-- [Access the finished project](https://victormoroo.github.io/Link-Aggregator/)
+- [Access the finished project](https://victormoroo.github.io/Link_Aggregator/)
 
 ## 🔖 Layout
 
