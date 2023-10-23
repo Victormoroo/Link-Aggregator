@@ -37,7 +37,7 @@ LinkAggregator is a web site created to combine links and use as an online busin
 
 ## 🔖 Layout
 
-You can preview the project layout through [DESSE LINK](https://www.figma.com/community/file/1187422022288947321). It is necessary to have an account on [Figma](https://figma.com) to access it.
+You can preview the project layout through this [LINK](https://www.figma.com/community/file/1187422022288947321). It is necessary to have an account on [Figma](https://figma.com) to access it.
 
 ## :memo: License
 
